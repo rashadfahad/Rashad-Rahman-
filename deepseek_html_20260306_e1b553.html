@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rashad Rahman Fahad · content & finance</title>
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Main CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-glow" id="cursor"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- loading screen -->
+  <div class="loading-screen" id="loading">
+    <div class="loader"></div>
+  </div>
+
+  <!-- floating nav -->
+  <nav class="nav-bar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#best-project">Projects</a>
+    <a href="#best-reels">Reels</a>
+    <a href="#work-exp">Work</a>
+    <a href="#experience">Journey</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <!-- ===== HEADER: name left + profile/facebook right (with animated glow) ===== -->
+    <div class="page-header">
+      <div class="header-left reveal">
+        <h1>Rashad Rahman Fahad</h1>
+        <div class="subtitle-small">Finance · Content · Tech</div>
+      </div>
+      <div class="header-right reveal">
+        <div class="profile-image-frame">
+          <div class="profile-image">
+            <i class="fas fa-user-astronaut"></i>  <!-- your picture placeholder -->
+          </div>
+        </div>
+        <div class="profile-name">Muhammad Fahad</div>
+        <a href="https://www.facebook.com/share/1DUervBcBT/" target="_blank" class="facebook-header-btn">
+          <i class="fab fa-facebook"></i> Facebook
+        </a>
+      </div>
+    </div>
+
+    <!-- ===== HERO with typing + buttons directly under "Finance · Content · Tech" ===== -->
+    <section id="home" class="hero">
+      <div class="hero-content reveal">
+        <div class="subtitle">
+          <span id="typed-text"></span><span class="cursor-typed"></span>
+        </div>
+        <div class="btn-group">
+          <a href="#best-project" class="btn">Best Projects</a>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WORK EXPERIENCE ===== -->
+    <section id="work-exp">
+      <h2>Work experience</h2>
+      <div class="work-grid">
+        <!-- PC Builder Bangladesh -->
+        <div class="work-card reveal tilt-card">
+          <i class="fas fa-laptop"></i>
+          <h3>PC BUILDER BANGLADESH</h3>
+          <div class="work-place">(PCB)</div>
+          <p style="margin: 15px 0; color: #ccf0ff;">Content & creative team</p>
+          <span class="work-date">APR 4, 2024 – JAN 1, 2026</span>
+        </div>
+
+        <!-- PCB STORE -->
+        <div class="work-card reveal tilt-card">
+          <i class="fas fa-store"></i>
+          <h3>PCB STORE</h3>
+          <div class="work-place">retail & online</div>
+          <p style="margin: 15px 0; color: #ccf0ff;">Product showcase & marketing</p>
+          <span class="work-date">APR 4, 2024 – JAN 1, 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="glass-card reveal" style="max-width: 1100px;">
+        <p style="font-size: 1.4rem; margin-bottom: 25px;">Hi, I'm Fahad, a graphic designer and tech content creator with a strong focus on display technology and consumer hardware. I specialize in creating visual designs for YouTube channels and producing informative tech content that helps people understand complex technology in a simple way.</p>
+        <p style="font-size: 1.2rem; margin-bottom: 20px;">My work involves researching and analyzing display manufacturing brands, monitor technologies, and panel types such as IPS, VA, TN, and OLED. I create detailed reviews and buying guides that explain performance, image quality, and real-world usability so viewers can make better decisions before purchasing tech products.</p>
+        <p style="font-size: 1.2rem; margin-bottom: 20px;">Alongside design, I handle video editing and content production for YouTube and Facebook, where I present tech analysis, product insights, and comparisons in a clear and engaging format. I regularly communicate with brands and manufacturers to gather technical information and provide accurate, research-based reviews.</p>
+        <p style="font-size: 1.2rem;">I'm passionate about technology, visual storytelling, and educating consumers through digital media. My goal is to combine design, research, and technical knowledge to create content that is both visually engaging and genuinely useful for the tech community.</p>
+
+        <!-- skill bars -->
+        <div class="skill-bars" style="margin-top:40px;">
+          <div class="skill-item">
+            <div class="skill-info"><span>Social Media Management</span><span>90%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Project Management</span><span>85%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Research & Analysis</span><span>88%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="88"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Teamwork & Leadership</span><span>92%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="92"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Quality Control</span><span>80%</span></div>
+            <div class="progress-bar"><div class="progress-fill" data-width="80"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE SKILLS (cards) -->
+    <section id="skills">
+      <h2>Core competencies</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal"><i class="fas fa-pen-fancy"></i><h3>Content Creation</h3><div class="skill-indicator"><div class="skill-indicator-fill" style="width:95%"></div></div></div>
+        <div class="skill-card reveal"><i class="fas fa-video"></i><h3>Video Editing</h3><div class="skill-indicator"><div class="skill-indicator-fill" style="width:90%"></div></div></div>
+        <div class="skill-card reveal"><i class="fas fa-users"></i><h3>Audience Engagement</h3><div class="skill-indicator"><div class="skill-indicator-fill" style="width:88%"></div></div></div>
+        <div class="skill-card reveal"><i class="fas fa-paint-brush"></i><h3>Graphic Design</h3><div class="skill-indicator"><div class="skill-indicator-fill" style="width:92%"></div></div></div>
+        <div class="skill-card reveal"><i class="fas fa-chart-line"></i><h3>SEO Optimization</h3><div class="skill-indicator"><div class="skill-indicator-fill" style="width:80%"></div></div></div>
+        <div class="skill-card reveal"><i class="fas fa-tasks"></i><h3>Project Management</h3><div class="skill-indicator"><div class="skill-indicator-fill" style="width:87%"></div></div></div>
+        <div class="skill-card reveal"><i class="fas fa-handshake"></i><h3>Brand Collaboration</h3><div class="skill-indicator"><div class="skill-indicator-fill" style="width:85%"></div></div></div>
+        <div class="skill-card reveal"><i class="fas fa-search"></i><h3>Research Analysis</h3><div class="skill-indicator"><div class="skill-indicator-fill" style="width:90%"></div></div></div>
+        <div class="skill-card reveal"><i class="fas fa-people-arrows"></i><h3>Teamwork</h3><div class="skill-indicator"><div class="skill-indicator-fill" style="width:95%"></div></div></div>
+        <div class="skill-card reveal"><i class="fas fa-crown"></i><h3>Leadership</h3><div class="skill-indicator"><div class="skill-indicator-fill" style="width:88%"></div></div></div>
+        <div class="skill-card reveal"><i class="fas fa-check-double"></i><h3>Quality Control</h3><div class="skill-indicator"><div class="skill-indicator-fill" style="width:82%"></div></div></div>
+        <div class="skill-card reveal"><i class="fas fa-calendar-alt"></i><h3>Project Scheduling</h3><div class="skill-indicator"><div class="skill-indicator-fill" style="width:84%"></div></div></div>
+      </div>
+    </section>
+
+    <!-- BEST PROJECTS (full reviews) -->
+    <section id="best-project">
+      <h2>Best projects</h2>
+      <div class="best-projects-grid">
+        <!-- Project 1: BenQ GW2790Q -->
+        <div class="project-card reveal tilt-card">
+          <div class="project-image-placeholder">
+            <i class="fab fa-youtube"></i> <span>BenQ GW2790Q</span>
+          </div>
+          <div class="project-content">
+            <div class="project-title">Is this monitor value for money? BenQ GW2790Q</div>
+            <p class="project-desc">In-depth analysis of panel quality, ergonomics, and real-world performance for creators & office use. Full breakdown with color tests and comparison.</p>
+            <a href="https://www.youtube.com/watch?v=FRwYW8cPwwM&t=1s" target="_blank" class="youtube-link">
+              <i class="fab fa-youtube"></i> Watch review
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: ACER VG240Y X1 -->
+        <div class="project-card reveal tilt-card">
+          <div class="project-image-placeholder">
+            <i class="fab fa-youtube"></i> <span>ACER VG240Y X1</span>
+          </div>
+          <div class="project-content">
+            <div class="project-title">200hz এর মনিটর ২০ হাজারের নিচে! Ft. ACER VG240Y X1</div>
+            <p class="project-desc">Budget 200Hz gaming monitor review: unboxing, color accuracy, ghosting tests, and comparison with MSI, Asus, Dahua & Titan Army.</p>
+            <a href="https://www.youtube.com/watch?v=-Q_FpqRud9o&t=3s" target="_blank" class="youtube-link">
+              <i class="fab fa-youtube"></i> Watch review
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: BenQ MA270U -->
+        <div class="project-card reveal tilt-card">
+          <div class="project-image-placeholder">
+            <i class="fab fa-youtube"></i> <span>BenQ MA270U</span>
+          </div>
+          <div class="project-content">
+            <div class="project-title">Productivity & Eco System Combined? BenQ MA270U</div>
+            <p class="project-desc">Deep dive into Mac‑friendly 4K monitor: display quality, build, connectivity, and how it enhances productivity workflow.</p>
+            <a href="https://www.youtube.com/watch?v=Jdw38URkqtg" target="_blank" class="youtube-link">
+              <i class="fab fa-youtube"></i> Watch review
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEST REELS -->
+    <section id="best-reels">
+      <h2>Best reels</h2>
+      <div class="reels-grid">
+        <!-- Reel 1: PCB Calibration -->
+        <div class="reel-card reveal tilt-card">
+          <div class="reel-image-placeholder">
+            <i class="fab fa-youtube"></i>
+            <i class="fas fa-film" style="color: hotpink;"></i>
+          </div>
+          <div class="reel-content">
+            <div class="reel-title">PCB কেন Calibration ফাইল শেয়ার করে না?</div>
+            <a href="https://www.youtube.com/shorts/ZqR6xuKGF9I" target="_blank" class="reel-link">
+              <i class="fab fa-youtube"></i> Watch reel
+            </a>
+          </div>
+        </div>
+
+        <!-- Reel 2: Titan Army 2K Monitor -->
+        <div class="reel-card reveal tilt-card">
+          <div class="reel-image-placeholder">
+            <i class="fab fa-youtube"></i>
+            <i class="fas fa-film" style="color: hotpink;"></i>
+          </div>
+          <div class="reel-content">
+            <div class="reel-title">এইবার সস্তায় 2K Monitor Titan Army P2710R2</div>
+            <a href="https://www.youtube.com/shorts/CfRkcnbeHak" target="_blank" class="reel-link">
+              <i class="fab fa-youtube"></i> Watch reel
+            </a>
+          </div>
+        </div>
+
+        <!-- Reel 3: VOLTME Powerbank -->
+        <div class="reel-card reveal tilt-card">
+          <div class="reel-image-placeholder">
+            <i class="fab fa-youtube"></i>
+            <i class="fas fa-film" style="color: hotpink;"></i>
+          </div>
+          <div class="reel-content">
+            <div class="reel-title">Get Premium Powerbank | VOLTME Hypercore 10000mAh at a great deal</div>
+            <a href="https://www.youtube.com/shorts/V3jmLs6-HlY" target="_blank" class="reel-link">
+              <i class="fab fa-youtube"></i> Watch reel
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / LEARNING (timeline) -->
+    <section id="experience">
+      <h2>Learning journey</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal"><h4>2021</h4><p>Started Finance department – discovered content creation & graphic design</p></div>
+        <div class="timeline-item reveal"><h4>2022</h4><p>First YouTube tech breakdown (monitor panels) → audience growth</p></div>
+        <div class="timeline-item reveal"><h4>2023</h4><p>Deepened SEO, project management, brand collaboration skills</p></div>
+        <div class="timeline-item reveal"><h4>2024</h4><p>Joined PC Builder Bangladesh & PCB Store (April)</p></div>
+        <div class="timeline-item reveal"><h4>2025</h4><p>Building research-based tech community + finance perspective</p></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-info glass-card reveal">
+          <p><i class="fas fa-envelope"></i> rashad.rahman07@gmail.com</p>
+          <p><i class="fas fa-phone-alt"></i> 01751627979</p>
+        </div>
+        <form class="contact-form reveal" onsubmit="event.preventDefault(); alert('Message sent (demo)');">
+          <input class="input-field" type="text" placeholder="Your name">
+          <input class="input-field" type="email" placeholder="Email">
+          <textarea class="input-field" rows="4" placeholder="Message"></textarea>
+          <button class="btn" type="submit" style="width:fit-content;">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      © 2026 Rashad Rahman Fahad — content & finance
+    </footer>
+  </main>
+
+  <!-- Main JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
